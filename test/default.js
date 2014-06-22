@@ -9,21 +9,43 @@
 	var ORMExtension = require('../')
 
 
+	var MyExtension = new Class({
+		inherits: ORMExtension
+
+		, onBeforeSave: function() {
+
+		}
+
+		, onBeforePrepare: function() {
+
+		}
+	});
+
 
 	describe('The ORMExtension', function(){
 		it('should not crash when instantiated', function() {
-			new ORMExtension();
+			new MyExtension();
 		});
 
 		it('should accept varaible', function() {
-			var ext = new ORMExtension();
+			var ext = new MyExtension();
 			ext.setVariables({a:1});
 			assert.equal(ext.a, 1);
 		});
 
 		it('should identify itself as extension', function() {
-			var ext = new ORMExtension();
+			var ext = new MyExtension();
 			assert.equal(ext.isExtension(), true);
+		});
+
+		it('should return all eventlistners for the model', function() {
+			var ext = new MyExtension();
+			assert.equal(ext.getModelEventListeners().length, 1);
+		});
+
+		it('should return all eventlistners for the resource', function() {
+			var ext = new MyExtension();
+			assert.equal(ext.getResourceEventListeners().length, 1);
 		});
 	});
 	
