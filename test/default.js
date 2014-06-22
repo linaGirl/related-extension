@@ -19,6 +19,11 @@
 			var ext = new ORMExtension();
 			ext.setVariables({a:1});
 			assert.equal(ext.a, 1);
-		});	
+		});
+
+		it('should identify itself as extension', function() {
+			var ext = new ORMExtension();
+			assert.equal(ext.isExtension(), true);
+		});
 	});
 	
