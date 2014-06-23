@@ -12,13 +12,9 @@
 	var MyExtension = new Class({
 		inherits: ORMExtension
 
-		, onBeforeSave: function() {
-
-		}
-
-		, onBeforePrepare: function() {
-
-		}
+		, onBeforeSave: function() {}
+		, onBeforePrepare: function() {}
+		, onBeforeFind: function() {}
 	});
 
 
@@ -48,15 +44,21 @@
 			assert.equal(ext.getResourceEventListeners().length, 1);
 		});
 
-		it('should return the correct structur for eventlistners for the models', function() {
+		it('should return the correct structure for eventlistners for the models', function() {
 			var ext = new MyExtension();
 			assert.equal(ext.getModelEventListeners()[0].event, 'beforeSave');
 			assert.equal(ext.getModelEventListeners()[0].listener, 'function () { [native code] }');
 		});
 
-		it('should return the correct structur for eventlistners for the resources', function() {
+		it('should return the correct structure for eventlistners for the resources', function() {
 			var ext = new MyExtension();
 			assert.equal(ext.getResourceEventListeners()[0].event, 'beforePrepare');
+			assert.equal(ext.getResourceEventListeners()[0].listener, 'function () { [native code] }');
+		});
+
+		it('should return the correct structure for eventlistners for the querybuilders', function() {
+			var ext = new MyExtension();
+			assert.equal(ext.getQueryBuilderEventListeners()[0].event, 'beforeFind');
 			assert.equal(ext.getResourceEventListeners()[0].listener, 'function () { [native code] }');
 		});
 	});
