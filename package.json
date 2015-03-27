@@ -1,19 +1,19 @@
 {
-      "name"                        : "ee-orm-extension"
-    , "description"                 : "extension package for the ee-orm package"
-    , "version"                     : "0.1.7"
-    , "homepage"                    : "https://github.com/eventEmitter/ee-orm-extension"
+      "name"                        : "related-extension"
+    , "description"                 : "Create extensions for the related ORM"
+    , "version"                     : "0.2.0"
+    , "homepage"                    : "https://github.com/eventEmitter/related-extension"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "licence"                     : "mit"
     , "repository": {
-          "url"                     : "https://github.com/eventEmitter/ee-orm-extension.git"
+          "url"                     : "https://github.com/eventEmitter/related-extension.git"
         , "type"                    : "git"
     }
     , "engines": {
         "node"                      : ">=v0.10.17"
     }
     , "bugs": {
-        "url"                       : "https://github.com/eventEmitter/ee-orm-extension/issues"
+        "url"                       : "https://github.com/eventEmitter/related-extension/issues"
     }
     , "dependencies": {
           "ee-class"                : "1.0.x"
@@ -25,7 +25,7 @@
           "mocha"                   : "1.17.x"
     }
     , "optionalDependencies": {}
-    , "keywords"                    : ["ee", "orm", "extension"]
+    , "keywords"                    : ["related", "orm", "extension"]
     , "scripts": {
         "test"                      : "./node_modules/mocha/bin/mocha --reporter spec"
     }

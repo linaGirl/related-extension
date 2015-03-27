@@ -1,4 +1,5 @@
+!function() {
 
+	module.exports = require('./lib/RelatedExtension');
 
-
-	module.exports = require('./lib/ORMExtension');
+}();

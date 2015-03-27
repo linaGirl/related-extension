@@ -1,30 +1,29 @@
-# ee-orm-extension
+# related-extension
 
-Extension package for the ee-orm package. You should inherit from this package if you're creating an extension for the ee-orm package.
+Create extensions for the (Related ORM)[https://www.npmjs.com/package/related]
 
-## installation
-
-    npm install ee-orm-extension
-
-## build status
-
-[![Build Status](https://travis-ci.org/eventEmitter/ee-orm-extension.png?branch=master)](https://travis-ci.org/eventEmitter/ee-orm-extension)
+[![npm](https://img.shields.io/npm/dm/related-extension.svg?style=flat-square)](https://www.npmjs.com/package/related-extension)
+[![Travis](https://img.shields.io/travis/eventEmitter/related-extension.svg?style=flat-square)](https://travis-ci.org/eventEmitter/related-extension)
+[![node](https://img.shields.io/node/v/related-extension.svg?style=flat-square)](https://nodejs.org/)
 
 
-## usage
+## API
 
 Basically you can inherit from this class, it will provides some basic methods & functions required for wrting an extension for the orm
 
     var   Class         = require('ee-class')
-        , ORMExtension  = require('ee-orm-extension');
+        , Extension     = require('related-extension');
 
 
     var MyFancyORMExtension = new Class({
-        inherits: ORMExtension
+        inherits: Extension
 
         // class constructor
-        , init: function(options) {
+        , init: function init(options) {
 
+
+            // don't forget to call the super constructor
+            init.call(this, options);
         }
     });
 
