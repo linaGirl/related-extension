@@ -31,7 +31,7 @@
 
 		it('should identify itself as extension', function() {
 			var ext = new MyExtension();
-			assert.equal(ext.isExtension(), true);
+			assert.equal(ext.isRelatedExtension(), true);
 		});
 
 		it('should return all eventlistners for the model', function() {
