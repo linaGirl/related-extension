@@ -1,10 +1,10 @@
 {
       "name"                        : "related-extension"
     , "description"                 : "Create extensions for the related ORM"
-    , "version"                     : "1.0.0"
+    , "version"                     : "1.1.0"
     , "homepage"                    : "https://github.com/eventEmitter/related-extension"
-    , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
-    , "licence"                     : "mit"
+    , "author"                      : "Michael van der Weg <michael@vanderweg.com> (http://eventemitter.com/)"
+    , "license"                     : "MIT"
     , "repository": {
           "url"                     : "https://github.com/eventEmitter/related-extension.git"
         , "type"                    : "git"
@@ -17,7 +17,7 @@
     }
     , "dependencies": {
           "ee-class"                : "1.x"
-        , "ee-types"                : "1.x"
+        , "ee-types"                : "2.x"
         , "ee-event-emitter"        : "0.3.x"
         , "ee-log"                  : "0.3.x"
     }

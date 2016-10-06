@@ -50,7 +50,7 @@ this function gets the models definition and the querybuilders classdefintion as
 
     applyQueryBuilderMethods: function(definition, classDefinition) {
         classDefinition.doSomeFanyStuff = function() {
-            
+
         }
     }
 
