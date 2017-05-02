@@ -1,5 +1,7 @@
 # related-extension
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/related-extension.svg)](https://greenkeeper.io/)
+
 Create extensions for the (Related ORM)[https://www.npmjs.com/package/related]
 
 [![npm](https://img.shields.io/npm/dm/related-extension.svg?style=flat-square)](https://www.npmjs.com/package/related-extension)
